@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/admin.scss"],"names":[],"mappings":"AAAA;EACE,YAAY,EAAA","file":"admin.css","sourcesContent":[".admin__contain {\r\n  margin: 20px;\r\n}\r\n"]}

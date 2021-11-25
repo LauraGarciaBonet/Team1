@@ -1,15 +1,37 @@
 "use strict";
-// const listUsers = document.querySelector(".js-listUsers");
-// let usersData = [];
-
-const getApiData = () => {
-  fetch("http://localhost:8080/team3/clientes")
-    .then((response) => response.json())
-    .then((data) => {
-      usersData = data;
-      paintUsers();
-    });
+const userName = document.querySelector(".js-userName").value;
+const password = document.querySelector(".js-password").value;
+const user = document.querySelector(".js-user");
+let userData = {
+  userName,
+  password,
 };
+var url = "https://example.com/profile";
+var data = { username: "example" };
+
+fetch(url, {
+  method: "POST", // or 'PUT'
+  body: JSON.stringify(userData), // data can be `string` or {object}!
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
+  .then((res) => res.json())
+  .catch((error) => console.error("Error:", error))
+  .then((response) => console.log("Success:", response));
+
+// const getApiData = () => {
+//   fetch("http://localhost:8080/team3/clientes", {
+//     method: "POST",
+//     body: JSON.stringify(data),
+//     headers: { "Content-Type": "application/json" },
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       userData = data;
+//       // paintUsers();
+//     });
+// };
 // const paintUsers = () => {
 //   let userCode = "";
 
