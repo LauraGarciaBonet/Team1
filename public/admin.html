@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>Admin</title>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <h1>
+          <img
+            class="title__img"
+            src="https://1000marcas.net/wp-content/uploads/2021/08/Capgemini-Logo.png"
+            alt="logo capgemini"
+          />
+        </h1>
+      </header>
+
+      <main>
+        <form class="form-horizontal"></form>
+        
+        <fieldset>
+          <!-- Form Name -->
+          <legend>Crear Proyecto</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput"
+              >Nombre del proyecto</label
+            >
+            <div class="col-md-4">
+              <input
+                id="textinput"
+                name="textinput"
+                type="text"
+                placeholder="name project"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput"
+              >Nombre del Cliente</label
+            >
+            <div class="col-md-4">
+              <input
+                id="textinput"
+                name="textinput"
+                type="text"
+                placeholder="customer name"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Fecha de Fin</label>
+            <div class="col-md-4">
+              <input
+                id="textinput"
+                name="textinput"
+                type="text"
+                placeholder="00-00-0000"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="selectbasic"
+              >Estado del Proyecto</label
+            >
+            <div class="col-md-4">
+              <select id="selectbasic" name="selectbasic" class="form-control">
+                <option value="1">Inicio</option>
+                <option value="2">Producción</option>
+                <option value="">Pruebas</option>
+                <option value="">Revisión por el Cliente</option>
+                <option value="">Finalizado</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput"
+              >Fecha de Inicio</label
+            >
+            <div class="col-md-4">
+              <input
+                id="textinput"
+                name="textinput"
+                type="text"
+                placeholder="00-00-0000"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea"
+              >Descripción del Proyecto</label
+            >
+            <div class="col-md-4">
+              <textarea class="form-control" id="textarea" name="textarea">
+        default text</textarea
+              >
+            </div>
+          </div>
+
+          <!-- Button (Double) -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+              <button id="button1id" name="button1id" class="btn btn-success">
+                Crear
+              </button>
+              <button id="button2id" name="button2id" class="btn btn-default">
+                Visualizar
+              </button>
+            </div>
+          </div>
+
+          <!-- Button (Double) -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+              <button id="button1id" name="button1id" class="btn btn-warning">
+                Modificar
+              </button>
+              <button id="button2id" name="button2id" class="btn btn-danger">
+                Eliminar
+              </button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <!-- Form Name -->
+          <legend>Crear Grupo</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput"
+              >Nombre del Grupo:</label
+            >
+            <div class="col-md-4">
+              <input
+                id="textinput"
+                name="textinput"
+                type="text"
+                placeholder="group name"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea"
+              >Descripción del grupo:</label
+            >
+            <div class="col-md-4">
+              <textarea class="form-control" id="textarea" name="textarea">
+        default text</textarea
+              >
+            </div>
+          </div>
+
+          <!-- Button (Double) -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+              <button id="button1id" name="button1id" class="btn btn-success">
+                Crear
+              </button>
+              <button id="button2id" name="button2id" class="btn btn-primary">
+                Modificar
+              </button>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+              <button id="singlebutton" name="singlebutton" class="btn btn-danger">
+                Eliminar
+              </button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <!-- Form Name -->
+          <legend>Incluir Trabajadores</legend>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="selectbasic"></label>
+            <div class="col-md-4">
+              <select id="selectbasic" name="selectbasic" class="form-control">
+                <option value="1">Option one</option>
+                <option value="2">Option two</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <!-- datos del trabajador seleccionado -->
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton"></label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-success">
+              Incluir
+            </button>
+          </div>
+        </div>
+
+      </main>
+      <footer>
+        <small class="footer__text">
+          Team1 &copy; Todos los derechos reservados
+        </small>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

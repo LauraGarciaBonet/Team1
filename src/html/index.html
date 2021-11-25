@@ -11,14 +11,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Team1</title>
   </head>
 
-  <body>
+  <body class="landing page">
     <include src="./partials/header.html"></include>
     <div class="container">
       <div class="login-container">
@@ -28,7 +28,12 @@
           <form action="" method="">
             <input name="user" type="text" placeholder="username" />
             <input type="password" placeholder="password" />
-            <button class="btn btn-info btn-block login" type="submit">
+            <button
+              class="btn btn-info btn-block login"
+              href="./admin.html"
+              type="submit"
+            >
+              <!-- <a href="./admin.html"></a> -->
               Login
             </button>
           </form>
@@ -41,4 +46,3 @@
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
-
