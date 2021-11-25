@@ -1,114 +1,81 @@
-<div class="container px-5 my-5">
-  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-    <div class="form-floating mb-3">
-      <input
-        class="form-control"
-        id="nombreDelProyecto"
-        type="text"
-        placeholder="Nombre del Proyecto:"
-        data-sb-validations="required"
-      />
-      <label for="nombreDelProyecto">Nombre del Proyecto:</label>
-      <div
-        class="invalid-feedback"
-        data-sb-feedback="nombreDelProyecto:required"
-      >
-        Nombre del Proyecto: is required.
-      </div>
+
+<form class="form-horizontal">
+  <fieldset>
+  
+  <!-- Form Name -->
+  <legend>Crear Proyecto</legend>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Nombre del proyecto</label>  
+    <div class="col-md-4">
+    <input id="textinput" name="textinput" type="text" placeholder="name project" class="form-control input-md" required="">
     </div>
-    <div class="form-floating mb-3">
-      <input
-        class="form-control"
-        id="nombreDelCliente"
-        type="text"
-        placeholder="Nombre del Cliente:"
-        data-sb-validations="required"
-      />
-      <label for="nombreDelCliente">Nombre del Cliente:</label>
-      <div
-        class="invalid-feedback"
-        data-sb-feedback="nombreDelCliente:required"
-      >
-        Nombre del Cliente: is required.
-      </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Nombre del Cliente</label>  
+    <div class="col-md-4">
+    <input id="textinput" name="textinput" type="text" placeholder="customer name" class="form-control input-md" required=""> 
     </div>
-    <div class="form-floating mb-3">
-      <select
-        class="form-select"
-        id="estadoDelProyecto"
-        aria-label="Estado del Proyecto:"
-      >
-        <option value="En Curso">En Curso</option>
-        <option value="Producción">Producción</option>
-        <option value="Pruebas">Pruebas</option>
-        <option value="Revisión por el Cliente">Revisión por el Cliente</option>
-        <option value="Finalizado">Finalizado</option>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Fecha de Fin</label>  
+    <div class="col-md-4">
+    <input id="textinput" name="textinput" type="text" placeholder="00-00-0000" class="form-control input-md" required=""> 
+    </div>
+  </div>
+  
+  <!-- Select Basic -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="selectbasic">Estado del Proyecto</label>
+    <div class="col-md-4">
+      <select id="selectbasic" name="selectbasic" class="form-control">
+        <option value="1">Inicio</option>
+        <option value="2">Producción</option>
+        <option value="">Pruebas</option>
+        <option value="">Revisión por el Cliente</option>
+        <option value="">Finalizado</option>
       </select>
-      <label for="estadoDelProyecto">Estado del Proyecto:</label>
     </div>
-    <div class="form-floating mb-3">
-      <input
-        class="form-control"
-        id="fechaDeInicio"
-        type="text"
-        placeholder="Fecha de Inicio"
-        data-sb-validations="required"
-      />
-      <label for="fechaDeInicio">Fecha de Inicio</label>
-      <div class="invalid-feedback" data-sb-feedback="fechaDeInicio:required">
-        Fecha de Inicio is required.
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Fecha de Inicio</label>  
+    <div class="col-md-4">
+    <input id="textinput" name="textinput" type="text" placeholder="00-00-0000" class="form-control input-md" required="">
+    </div>
+  </div>
+  
+  <!-- Textarea -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textarea">Descripción del Proyecto</label>
+    <div class="col-md-4">                     
+      <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+    </div>
+  </div>
+  
+  <!-- Button (Double) -->
+  <div class="form-group">
+      <label class="col-md-4 control-label" for="button1id"></label>
+      <div class="col-md-8">
+        <button id="button1id" name="button1id" class="btn btn-success">Crear </button>
+        <button id="button2id" name="button2id" class="btn btn-default">Visualizar</button>
       </div>
     </div>
-    <div class="form-floating mb-3">
-      <input
-        class="form-control"
-        id="fechaDeFin"
-        type="text"
-        placeholder="Fecha de Fin:"
-        data-sb-validations="required"
-      />
-      <label for="fechaDeFin">Fecha de Fin:</label>
-      <div class="invalid-feedback" data-sb-feedback="fechaDeFin:required">
-        Fecha de Fin: is required.
+    
+    <!-- Button (Double) -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="button1id"></label>
+      <div class="col-md-8">
+        <button id="button1id" name="button1id" class="btn btn-warning">Modificar</button>
+        <button id="button2id" name="button2id" class="btn btn-danger">Eliminar</button>
       </div>
     </div>
-    <div class="form-floating mb-3">
-      <textarea
-        class="form-control"
-        id="descripcionDelProyecto"
-        type="text"
-        placeholder="Descripción del Proyecto"
-        style="height: 10rem"
-        data-sb-validations="required"
-      ></textarea>
-      <label for="descripcionDelProyecto">Descripción del Proyecto</label>
-      <div
-        class="invalid-feedback"
-        data-sb-feedback="descripcionDelProyecto:required"
-      >
-        Descripción del Proyecto is required.
-      </div>
-    </div>
-    <div class="d-none" id="submitSuccessMessage">
-      <div class="text-center mb-3">
-        <div class="fw-bolder">Form submission successful!</div>
-        <p>To activate this form, sign up at</p>
-        <a href="https://startbootstrap.com/solution/contact-forms"
-          >https://startbootstrap.com/solution/contact-forms</a
-        >
-      </div>
-    </div>
-    <div class="d-none" id="submitErrorMessage">
-      <div class="text-center text-danger mb-3">Error sending message!</div>
-    </div>
-    <div class="d-grid">
-      <button
-        class="btn btn-primary btn-lg disabled"
-        id="submitButton"
-        type="submit"
-      >
-        Submit
-      </button>
-    </div>
+  
+  </fieldset>
   </form>
-</div>
