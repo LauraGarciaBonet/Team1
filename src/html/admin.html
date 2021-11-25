@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
     <title>Admin</title>
   </head>
-  
+
   <body>
-    <div class="page">
-      <include src="./partials/header.html" title="Otra página del starter kit"></include>
+    <div>
+      <include src="./partials/header.html"></include>
       <main>
-        <p>
-          Esta es otra segunda página del Starter kit. Mira el fichero
-          <code class="code">./src/html/partials/main.html</code> para cómo hemos creado el enlace
-          que te ha traído hasta aquí.
-        </p>
+        <form class="form-horizontal"></form>
+        <include src="./partials/users.html"></include>
+        <include src="./partials/create-project.html"></include>
+        <include src="./partials/create-group.html"></include>
+        <include src="./partials/add-user.html"></include>
       </main>
       <include src="./partials/footer.html"></include>
     </div>
