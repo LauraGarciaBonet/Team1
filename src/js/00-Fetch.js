@@ -1,24 +1,53 @@
 "use strict";
-const userName = document.querySelector(".js-userName").value;
-const password = document.querySelector(".js-password").value;
-const user = document.querySelector(".js-user");
-let userData = {
-  userName,
-  password,
-};
-var url = "https://example.com/profile";
-var data = { username: "example" };
+// const userName = document.querySelector(".js-userName").value;
+// const password = document.querySelector(".js-password").value;
+// const user = document.querySelector(".js-user");
+// let userData = {
+//   userName,
+//   password,
+// };
+// let url = "https://example.com/profile";
+// //var data = { username: "example" };
 
-fetch(url, {
-  method: "POST", // or 'PUT'
-  body: JSON.stringify(userData), // data can be `string` or {object}!
-  headers: {
-    "Content-Type": "application/json",
-  },
-})
-  .then((res) => res.json())
-  .catch((error) => console.error("Error:", error))
-  .then((response) => console.log("Success:", response));
+// fetch(url, {
+//   method: "POST", // or 'PUT'
+//   body: JSON.stringify(userData), // data can be `string` or {object}!
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// })
+//   .then((response) => {
+//     if (response.ok) return response.text();
+//     else throw new Error(response.status);
+//   })
+//   .catch((error) => console.error("Error:", error))
+//   .then((response) => console.log("Success:", response));
+
+// fetch(url, {
+//   method: "GET", // or 'PUT'
+//   body: JSON.stringify(userData), // data can be `string` or {object}!
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((data) => {
+//     url = data;
+//   });
+//ejemplo
+// fetch('flores.jpg').then(function(response) {
+//     if(response.ok) {
+//       response.blob().then(function(miBlob) {
+//         var objectURL = URL.createObjectURL(miBlob);
+//         miImagen.src = objectURL;
+//       });
+//     } else {
+//       console.log('Respuesta de red OK pero respuesta HTTP no OK');
+//     }
+//   })
+//   .catch(function(error) {
+//     console.log('Hubo un problema con la petición Fetch:' + error.message);
+//   });
 
 // const getApiData = () => {
 //   fetch("http://localhost:8080/team3/clientes", {
@@ -34,11 +63,8 @@ fetch(url, {
 // };
 // const paintUsers = () => {
 //   let userCode = "";
-
-//   for (const user of usersData) {
-//     userCode += getUsersHtmlCode(user);
-//   }
-//   listUsers.innerHTML = userCode;
+//     userCode += getUsersHtmlCode(userData);
+//   user.innerHTML = userCode;
 //   //listenUser();
 // };
 // const getUsersHtmlCode = (user) => {
