@@ -1,6 +1,5 @@
 "use strict";
 
-console.log(">> Ready :)");
 $(function () {
   var textfield = $("input[name=user]");
   $('button[type="submit"]').click(function (e) {
