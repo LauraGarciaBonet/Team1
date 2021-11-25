@@ -2,14 +2,14 @@
 // const listUsers = document.querySelector(".js-listUsers");
 // let usersData = [];
 
-// const getApiData = () => {
-//   fetch("http://localhost:8080/team3/clientes")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       usersData = data;
-//       paintUsers();
-//     });
-// };
+const getApiData = () => {
+  fetch("http://localhost:8080/team3/clientes")
+    .then((response) => response.json())
+    .then((data) => {
+      usersData = data;
+      paintUsers();
+    });
+};
 // const paintUsers = () => {
 //   let userCode = "";
 
